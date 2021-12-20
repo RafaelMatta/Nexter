@@ -1,7 +1,9 @@
+@import "common/abstract/abstract-dir.scss";
 
+@import "common/base/base-dir";
 
-@import "abstract/abstract-dir";
-@import "base/base-dir";
-@import "layout/layout-dir";
-@import "module/module-dir";
-@import "page/page-dir";
+@import "common/layout/layout-dir";
+
+@import "common/module/module-dir";
+
+@import "common/page/page-dir";
