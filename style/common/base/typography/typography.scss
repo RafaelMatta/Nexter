@@ -2,5 +2,32 @@
 
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
-
 $font-display: 'Josefin Sans', sans-serif;
+
+//HEADING
+%heading {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.heading{
+    &-1{
+        @extend %heading;
+    }
+
+    &-2{
+        @extend %heading;
+    }
+
+    &-3{
+        @extend %heading;
+    }
+
+    &-4{
+        @extend %heading;
+        font-size: 1.9rem;
+
+        &--light{ color: $color-grey-light-1}
+        &--dark{ color: $color-grey-dark-1}
+    }
+}
