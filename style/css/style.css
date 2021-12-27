@@ -134,7 +134,9 @@ body {
 .sidebar {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center; }
 
 .container {
   display: grid;
@@ -228,6 +230,25 @@ body {
   .nav__link:hover, .nav__link:active {
     background-color: rgba(255, 255, 255, 0.05);
     transform: translateY(-3px); }
+
+.nav-btn {
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 4.5rem;
+  margin-top: 4rem;
+  cursor: pointer; }
+  .nav-btn::before, .nav-btn::after {
+    content: "";
+    background-color: #fff;
+    height: 2px;
+    width: 4.5rem;
+    display: block; }
+  .nav-btn::before {
+    transform: translateY(-1.5rem); }
+  .nav-btn::after {
+    transform: translateY(1.5rem); }
 
 .homes {
   grid-column: center-start / center-end;
